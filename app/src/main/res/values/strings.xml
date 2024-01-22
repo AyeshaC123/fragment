@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">fragment</string>
+    <string name="visually_impaired">Visually impaired</string>
+    <string name="mobility_impaired">Mobility impaired</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="settings">Settings</string>
+    <string name="toolbar_title">FindMyWay</string>
+    <string name="admin">Admin</string>
+    <string name="info">Info</string>
+    <string name="Exploration">Exploration</string>
+
+
+
+</resources>

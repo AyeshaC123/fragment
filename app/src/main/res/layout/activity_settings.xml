@@ -1,0 +1,82 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextData"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Enter some text" />
+
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/buttonViewDatabase"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="View Database" />
+
+    <!-- You can replace this with a RecyclerView if you expect many items -->
+    <ListView
+        android:id="@+id/listViewData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/editTextBeaconID"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Beacon ID"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextBeaconName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Beacon Name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextLocation"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Location"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextPaths"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Paths"
+        android:inputType="text" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupFloor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonFloor1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Floor 1" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFloor2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Floor 2" />
+    </RadioGroup>
+
+
+
+</LinearLayout>
+

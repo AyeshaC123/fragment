@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Toolbar at the top -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"/>
+    <!-- Title: Admin -->
+    <TextView
+        android:id="@+id/textViewAdminTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Visually Impaired"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <!-- Buttons: Exploration and Navigation -->
+    <LinearLayout
+        android:id="@+id/linearLayoutButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/buttonExploration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exploration"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/buttonNavigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Navigation"/>
+    </LinearLayout>
+
+    <!-- ImageView centered horizontally and vertically -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="270dp"
+        android:layout_centerInParent="true"
+        app:srcCompat="@android:drawable/ic_btn_speak_now" />
+
+    <!-- EditText for user input -->
+    <EditText
+        android:id="@+id/editTextPageName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/imageView"
+        android:hint="Enter text"
+        android:layout_marginTop="16dp" />
+
+    <!-- Speak Button (previously Navigate button) -->
+    <Button
+        android:id="@+id/buttonNavigate"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/editTextPageName"
+        android:layout_centerHorizontal="true"
+        android:text="Search"
+        android:layout_marginTop="16dp" />
+
+    <!-- Home Button at the center bottom of the screen -->
+    <Button
+        android:id="@+id/buttonHome"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="Home"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp" />
+</RelativeLayout>

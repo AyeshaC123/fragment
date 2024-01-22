@@ -1,0 +1,56 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/editTextBeaconID"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Beacon ID: "
+            android:inputType="number"
+            android:enabled="false"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextBeaconName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Beacon Name: "
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextBeaconLocation"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Beacon Location: "
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextBeaconPaths"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Paths: "
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextBeaconFloor"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Floor: "
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+</ScrollView>
